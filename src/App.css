@@ -1,6 +1,5 @@
 body{
   background: hsl(228deg 42% 95%);
-  padding: 24px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -84,4 +83,38 @@ body{
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.notfound{
+  text-align: center;
+}
+
+.notfoundimg{
+  width: 100%;
+}
+
+.cardlogin{
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+.cardregister{
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 310px;
+  padding: 10px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.ul{
+  width: 90%;
 }
