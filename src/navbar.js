@@ -11,7 +11,7 @@ export function UserLogin() {
         <TextField className='ul' id="standard-basic" label="User name" variant="standard" /> <br />
         <TextField className='ul' id="standard-basic" label="Password" variant="standard" /> <br />
         <br />
-        <span>Don't have account <Link to="/user/register">Register here</Link></span>
+        <span>Don't have account <Link to="/user/register" className='tl'>Register here</Link></span>
       </Card>
     </div>
   )
@@ -27,7 +27,7 @@ export function UserRegister() {
         <TextField className='ul' id="standard-basic" label="Mobile Number" variant="standard" /> <br />
         <TextField className='ul' id="standard-basic" label="Password" variant="standard" /> <br />
         <br />
-        <span>Already have account <Link to="/user/login">Login here</Link></span>
+        <span>Already have account <Link to="/user/login" className='tl'>Login here</Link></span>
       </Card>
     </div>
   )

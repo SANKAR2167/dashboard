@@ -5,7 +5,7 @@ import { UserLogin, UserRegister } from './navbar';
 import { MonthlyProfits } from './MonthlyProfits';
 import { SummaryBoxList } from './SummaryBoxList';
 import { Overview } from './Overview';
-import { Link, Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import { AppBar, Button, Toolbar} from '@mui/material';
 
 function App() {
@@ -39,11 +39,16 @@ function App() {
 }
 
 function NotFound() {
+
+  const navigate= useNavigate();
+  
   return (
     <div className='notfound'>
       <h1>Page Is Not Found</h1>
       <h5>404 error</h5>
       <img className='notfoundimg' src="https://thumbs.dreamstime.com/b/website-error-bad-request-vector-artwork-depicts-funny-humorous-scenario-human-stick-figure-http-85523122.jpg" alt="" />
+
+      <Button varient="contained" onClick={() => navigate("/")}>Go Home</Button>
     </div>
   )
 }
