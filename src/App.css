@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+body{
+  background: hsl(228deg 42% 95%);
+  padding: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.summary-box-container, .profit-box-container,
+.overview-container{
+  background: hsl(0deg 0% 100%);
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.summary-box-time-container{
+  display: flex;
+  justify-content: space-between;
+  color: hsl(214deg 18% 65%);
+}
+
+.summary-box-text{
+  color: hsl(218deg 18% 43%);
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.summary-box-number, .profit-box-number{
+  color: hsl(212deg 23% 26%);
+  font-size: 28px;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.summary-box-spec, .profit-box-time-container,
+.overview-spec{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-box-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width : 500px) {
+  .summary-box-list{
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width : 1200px) {
+  .summary-box-list{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.summary-box-time-container > p, .profit-box-time-container > p {
+  margin: 6px 0px;
+}
+
+.profit-box-container, .overview-container{
+  margin-top: 24px;
+}
+
+.profit-box-sub-text, .overview-text{
+  color: hsl(214deg 17% 65%);
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.profit-box-heading, .overview-heading{
+  font-weight: 500;
+  margin: 0;
+}
+
+.profit-box-time-container > p:first-child {
+  color: hsl(214deg 17% 65%);
+}
+
+.percent-box-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 16px;
 }
